@@ -59,7 +59,8 @@ Transition to the next step.
 
 In this article you [configured/set up/built/deployed][something]. Now you can..
 
-EXAMPLES
+## MARKDOWN EXAMPLES
+
 This is _italics_ and this is **bold**.
 
 Only use italics and bold for specific things. Learn more at https://do.co/style#bold-and-italics
