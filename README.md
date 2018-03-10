@@ -33,11 +33,9 @@ Next...
 
 Finally...
 
-<!--
-If showing a command, explain the command first by talking about what it does. Then show the command.
+<!--If showing a command, explain the command first by talking about what it does. Then show the command.-->
 
-If showing a configuration file, try to show only the relevant parts and explain what needs to change.
--->
+configuration file - show only  relevant parts & explain what needs to change
 
 Now transition to the next step by telling the reader what's next.
 
