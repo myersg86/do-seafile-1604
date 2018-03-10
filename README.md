@@ -1,24 +1,8 @@
 # do-seafile-1604
-how to install and configure seafile server on ubuntu 16.04 droplet
 
+[do.co/style](https://do.co/style) - [Markdown previewer](https://www.digitalocean.com/community/markdown)
 
-
-```
-<!--
-This is an article template you can use as a quick starting point when writing DigitalOcean tutorials. Once you've reviewed the template, delete the comments and begin writing your article. You'll find some examples of our custom Markdown at the very bottom of the template.
-
-As you write, refer to our style and formatting guidelines for more detailed explanations:
-
-- [do.co/style](https://do.co/style)
-
-Use our [Markdown previewer](https://www.digitalocean.com/community/markdown) to review your article's formatting.
-
-Readers should be able to follow your tutorial from the beginning to the end on a DigitalOcean Droplet. Before submitting your article to the editorial team, please be sure to create a new Droplet and test your article from start to finish on it exactly as written. Cut and paste commands from the article into your terminal to make sure there aren't typos in the commands. If you find yourself executing a command that isn't in the article, incorporate it into the article to make sure the reader gets the exact same results. We will test your article and send it back to you if we run into technical problems, which significantly slows down the publication process.
--->
-
-
-# How To [Install/Configure/Do Something] on [Distribution]
-
+# How to install and configure seafile server on ubuntu 16.04 droplet
 <!-- Use Title Case for all Titles -->
 
 <!-- Learn about the title, introduction, and Goals sections at https://do.co/style#title-introduction-and-goals -->
@@ -84,7 +68,7 @@ Transition to the next step.
 
 ## Conclusion
 
-In this article you [configured/set up/built/deployed] [something]. Now you can....
+In this article you [configured/set up/built/deployed][something]. Now you can....
 
 <!-- Speak  to reader benefits of this technique or procedure and optionally provide places for further exploration. -->
 
@@ -98,13 +82,13 @@ This is `inline code`. Use it for referencing package names and commands.
 
 Here's a command someone types in the Terminal:
 
-​```command
+```command
 sudo nano /etc/nginx/sites-available/default
-​```
+```
 
 Here's a configuration file. The label on the first line lets you clearly state the file that's being shown or modified:
 
-​```nginx
+```nginx
 [label /etc/nginx/sites-available/default]
 server {
     listen 80 default_server;
@@ -119,14 +103,14 @@ server {
         try_files $uri $uri/ =404;
     }
 }
-​```
+```
 
 Here's output from a command:
 
-​```
+```
 [secondary_label Output]
 Could not connect to Redis at 127.0.0.1:6379: Connection refused
-​```
+```
 
 Learn about formatting commands and terminal output at https://do.co/style#code
 
@@ -160,4 +144,3 @@ Screenshots should be in PNG format and hosted on imgur. Embed them in the artic
 
 Learn more about images at https://do.co/style#images-and-other-assets
 -->
-```
