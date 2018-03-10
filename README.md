@@ -57,12 +57,9 @@ Transition to the next step.
 
 ## Conclusion
 
-In this article you [configured/set up/built/deployed][something]. Now you can....
+In this article you [configured/set up/built/deployed][something]. Now you can..
 
-<!-- Speak  to reader benefits of this technique or procedure and optionally provide places for further exploration. -->
-
-<!-- Some examples of how to mark up various things
-
+EXAMPLES
 This is _italics_ and this is **bold**.
 
 Only use italics and bold for specific things. Learn more at https://do.co/style#bold-and-italics
