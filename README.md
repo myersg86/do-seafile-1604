@@ -3,15 +3,6 @@
 [do.co/style](https://do.co/style) - [Markdown previewer](https://www.digitalocean.com/community/markdown)
 
 # How to install and configure seafile server on ubuntu 16.04 droplet
-<!-- Use Title Case for all Titles -->
-
-<!-- Learn about the title, introduction, and Goals sections at https://do.co/style#title-introduction-and-goals -->
-
-<!-- Learn about formatting headers at https://do.co/style#headers -->
-
-### Introduction
-
-<!-- Our articles have a specific structure. Learn more at https://do.co/style/structure -->
 
 Introductory paragraph about the topic that explains what this topic is about and why the reader should care; what problem does it solve?
 
