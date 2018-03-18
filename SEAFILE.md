@@ -21,8 +21,7 @@ When you're finished, you'll be able to...
 Before you begin this guide you'll need the following:
 
 * An Ubuntu 18.04 Server with at least 2GB of RAM
-* A sudo user and firewall configured on your server. You can create a user with sudo privileges and set up a basic firewall by following the Ubuntu 16.04 initial server setup guide.
-* A non-root user with sudo privileges (<insert link to Initial Server Setup article for the OS used in this tutorial>) explains how to set this up.)
+* A sudo user and firewall configured on your server. You can create a user with sudo privileges and set up a basic firewall by following the Ubuntu 18.04 initial server setup guide.
 * (Optional) If software such as Nginx needs to be installed, link to the proper article describing how to install it.
 * SSH Connection
 * Securing Ubuntu 18.04
