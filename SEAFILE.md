@@ -12,7 +12,7 @@ Seafile is a private cloud such as Dropbox, except that Seafile is open source a
 
 Introductory paragraph about the topic that explains what this topic is about and why the reader should care; what problem does it solve?
 
-In this guide, you will [configure/set up/build/deploy] [some thing]...
+In this guide, you will [configure/set up/build/deploy][some thing]...
 
 When you're finished, you'll be able to...
 
@@ -21,8 +21,9 @@ When you're finished, you'll be able to...
 Before you begin this guide you'll need the following:
 
 * An Ubuntu 18.04 Server with at least 2GB of RAM
-* A sudo user and firewall configured on your server. You can create a user with sudo privileges and set up a basic firewall by following the Ubuntu 18.04 initial server setup guide.
+* One Ubuntu 16.04 server set up by following [this Ubuntu 16.04 initial server setup tutorial], including a sudo non-root user and a firewall.
 * [https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04)
+* 
 * (Optional) If software such as Nginx needs to be installed, link to the proper article describing how to install it.
 * SSH Connection
 * Securing Ubuntu 18.04
@@ -41,20 +42,15 @@ To perform the installation, the seafile need some dependencies:
 * popler-utils
 * mysql-server
 * python-pip
-* 
-````command`
 
-`apt-get update`
+```command
+apt-get update
+apt-get install -y python2.7 sudo python-pip python-setuptools python-imaging python-mysqldb python-ldap python-urllib3 \
+openjdk-8-jre memcached libmemcached-dev zlib1g-dev pwgen curl openssl poppler-utils libpython2.7 libreoffice \
+libreoffice-script-provider-python ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy nginx python-requests
 
-`apt-get install -y python2.7 sudo python-pip python-setuptools python-imaging python-mysqldb python-ldap python-urllib3 \`
-
-`openjdk-8-jre memcached libmemcached-dev zlib1g-dev pwgen curl openssl poppler-utils libpython2.7 libreoffice \`
-
-`libreoffice-script-provider-python ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy nginx python-requests`
-
-`pip install --upgrade pylibmc django-pylibmc`
-
-`````
+pip install --upgrade pylibmc django-pylibmc
+```
 
 Next...
 
@@ -96,15 +92,15 @@ This is `inline code`. Use it for referencing package names and commands.
 
 Here's a command someone types in the Terminal:
 
-```command
+​```command
 
 sudo nano /etc/nginx/sites-available/default
 
-```
+​```
 
 Here's a configuration file. The label on the first line lets you clearly state the file that's being shown or modified:
 
-```nginx
+​```nginx
 
 [label /etc/nginx/sites-available/default]
 
@@ -128,17 +124,17 @@ server {
 
 }
 
-```
+​```
 
 Here's output from a command:
 
-```
+​```
 
 [secondary_label Output]
 
 Could not connect to Redis at 127.0.0.1:6379: Connection refused
 
-```
+​```
 
 Learn about formatting commands and terminal output at [https://do.co/style#code](https://do.co/style#code)
 
@@ -177,3 +173,4 @@ Screenshots should be in PNG format and hosted on imgur. Embed them in the artic
 Learn more about images at [https://do.co/style#images-and-other-assets](https://do.co/style#images-and-other-assets)
 
 -->
+`````
