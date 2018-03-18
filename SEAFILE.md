@@ -4,6 +4,8 @@
 
 # How to install and configure Seafile server on an Ubuntu 18.04 droplet
 
+Seafile is a private cloud such as Dropbox, except that Seafile is open source and encrypted by default, giving you added security and priva
+
 Introductory paragraph about the topic that explains what this topic is about and why the reader should care; what problem does it solve?
 
 In this guide, you will [configure/set up/build/deploy] [some thing]...
