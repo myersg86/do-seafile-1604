@@ -4,7 +4,11 @@
 
 # How to install and configure Seafile server on an Ubuntu 18.04 droplet
 
-Seafile is a private cloud such as Dropbox, except that Seafile is open source and encrypted by default, giving you added security and priva
+Seafile is a private cloud such as Dropbox, except that Seafile is open source and encrypted by default, giving you added security and privacy benefits.
+
+> Seafile is a private cloud such as Dropbox, mega.co.nz and others. Seafile is based on python and it is open source, so that you can create your own private cloud and it will be much more secure.
+
+> Seafile supports encryption libraries that make your data will be more secure. To encrypt files in a library, you need to set a password when you create the library. The password won't be stored on Seafile cloud. So even the administrator of the servers cannot view your encrypted data without the password.
 
 Introductory paragraph about the topic that explains what this topic is about and why the reader should care; what problem does it solve?
 
@@ -14,17 +18,13 @@ When you're finished, you'll be able to...
 
 ## Prerequisites
 
-<!-- Prerequisites are important. Learn more at [https://do.co/style#prerequisites](https://do.co/style#prerequisites) -->
-
 Before you begin this guide you'll need the following:
 
-- [number of servers] <OS and OS Version> server(s) <!-- Also specify the amount of RAM the server needs if relevant. -->
-
-- A non-root user with sudo privileges (<insert link to Initial Server Setup article for the OS used in this tutorial>) explains how to set this up.)
-
-- (Optional) If software such as Nginx needs to be installed, link to the proper article describing how to install it.
-
-- List any other accounts needed, such as Github or other services.
+* An Ubuntu 18.04 Server with at least 2GB of RAM
+*  A non-root user with sudo privileges (<insert link to Initial Server Setup article for the OS used in this tutorial>) explains how to set this up.)
+* (Optional) If software such as Nginx needs to be installed, link to the proper article describing how to install it.
+* SSH Connection
+* Securing Ubuntu 18.04
 
 ## Step 1 — Doing Something
 
