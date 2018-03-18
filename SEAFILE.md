@@ -40,6 +40,20 @@ To perform the installation, the seafile need some dependencies:
 * popler-utils
 * mysql-server
 * python-pip
+* 
+````command`
+
+`apt-get update`
+
+`apt-get install -y python2.7 sudo python-pip python-setuptools python-imaging python-mysqldb python-ldap python-urllib3 \`
+
+`openjdk-8-jre memcached libmemcached-dev zlib1g-dev pwgen curl openssl poppler-utils libpython2.7 libreoffice \`
+
+`libreoffice-script-provider-python ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy nginx python-requests`
+
+`pip install --upgrade pylibmc django-pylibmc`
+
+`````
 
 Next...
 
