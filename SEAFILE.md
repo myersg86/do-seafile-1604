@@ -37,8 +37,7 @@ First....
 To perform the installation, the seafile need some dependencies:
 
 * openjdk-8jre
-* LibreOffice
-* Popler-utils
+* popler-utils
 * mysql-server
 * python-pip
 
