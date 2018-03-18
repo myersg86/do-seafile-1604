@@ -25,7 +25,7 @@ Before you begin this guide you'll need the following:
 * A LEMP stack installed by following this [LEMP on Ubuntu 18.04 tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04)
 * (Optional) If software such as Nginx needs to be installed, link to the proper article describing how to install it.
 
-Download the latest server package.
+[Download the latest server package.](https://www.seafile.com/en/download)
 
 ## Step 1 - Install the Necessary Dependencies
 
@@ -61,11 +61,42 @@ Now transition to the next step by telling the reader what's next.
 
 ## Step 2 — Title Case
 
-Another introduction
+## Deploying and Directory Layout
 
-Your content
+Supposed your organization's name is "haiwen", and you've downloaded `seafile-server_1.8.2_*` into your home directory. We suggest you to to use the following layout for your deployment:
 
-Transition to the next step.
+```
+mkdir haiwen
+mv seafile-server_* haiwen
+cd haiwen
+# after moving seafile-server_* to this directory
+tar -xzf seafile-server_*
+mkdir installed
+mv seafile-server_* installed
+```
+
+Now you should have the following directory layout
+
+```
+#tree haiwen -L 2
+haiwen
+├── installed
+│   └── seafile-server_1.8.2_x86-64.tar.gz
+└── seafile-server-1.8.2
+    ├── reset-admin.sh
+    ├── runtime
+    ├── seafile
+    ├── seafile.sh
+    ├── seahub
+    ├── seahub.sh
+    ├── setup-seafile.sh
+    └── upgrade
+```
+
+The benefit of this layout is that:
+
+- We can place all the config files for Seafile server inside "haiwen" directory, making it easier to manage.
+- When you upgrade to a new version of Seafile, you can simply untar the latest package into "haiwen" directory. In this way you can reuse the existing config files in "haiwen" directory and don't need to configure again.
 
 ## Step 3 — Title Case
 
