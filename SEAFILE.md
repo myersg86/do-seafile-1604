@@ -363,7 +363,7 @@ FILE_SERVER_ROOT = 'http://seafile.example.com/seafhttp'
 
 ```
 ./seafile.sh start
-./seahub.sh start # or "./seahub.sh start-fastcgi" if you're using fastcgi
+./seahub.sh start
 ```
 
 ## Conclusion
