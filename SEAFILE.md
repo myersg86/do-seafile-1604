@@ -25,6 +25,8 @@ Before you begin this guide you'll need the following:
 * A LEMP stack installed by following this [LEMP on Ubuntu 18.04 tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04)
 * (Optional) If software such as Nginx needs to be installed, link to the proper article describing how to install it.
 
+Download the latest server package.
+
 ## Step 1 - Install the Necessary Dependencies
 
 Introduction to the step. What are we going to do and why are we doing it?
@@ -102,19 +104,19 @@ Here's a configuration file. The label on the first line lets you clearly state 
 server {
 
     listen 80 default_server;
-
+    
     listen [::]:80 default_server ipv6only=on;
-
+    
     root <^>/usr/share/nginx/html<^>;
-
+    
     index index.html index.htm;
-
+    
     server_name localhost;
-
+    
     location / {
-
+    
         try_files $uri $uri/ =404;
-
+    
     }
 
 }
@@ -168,4 +170,6 @@ Screenshots should be in PNG format and hosted on imgur. Embed them in the artic
 Learn more about images at [https://do.co/style#images-and-other-assets](https://do.co/style#images-and-other-assets)
 
 -->
+`````
+
 `````
