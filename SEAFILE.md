@@ -21,16 +21,11 @@ When you're finished, you'll be able to...
 Before you begin this guide you'll need the following:
 
 * An Ubuntu 18.04 Server with at least 2GB of RAM
-* One Ubuntu 16.04 server set up by following [this Ubuntu 16.04 initial server setup tutorial], including a sudo non-root user and a firewall.
-* [https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04)
-* 
+* One Ubuntu 16.04 server set up by following [this Ubuntu 16.04 initial server setup tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04), including a sudo non-root user and a firewall.
+* A LEMP stack installed by following this [LEMP on Ubuntu 18.04 tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04)
 * (Optional) If software such as Nginx needs to be installed, link to the proper article describing how to install it.
-* SSH Connection
-* Securing Ubuntu 18.04
 
 ## Step 1 - Install the Necessary Dependencies
-
-<!-- For more information on steps, see [https://do.co/style/#steps](https://do.co/style/#steps) -->
 
 Introduction to the step. What are we going to do and why are we doing it?
 
