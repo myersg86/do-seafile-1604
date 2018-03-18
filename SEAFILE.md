@@ -27,38 +27,6 @@ Before you begin this guide you'll need the following:
 
 [Download the latest server package.](https://www.seafile.com/en/download)
 
-## Step 1 - Install the Necessary Dependencies
-
-Introduction to the step. What are we going to do and why are we doing it?
-
-First....
-
-To perform the installation, the seafile need some dependencies:
-
-* openjdk-8jre
-* popler-utils
-* mysql-server
-* python-pip
-
-```command
-apt-get update
-apt-get install -y python2.7 sudo python-pip python-setuptools python-imaging python-mysqldb python-ldap python-urllib3 \
-openjdk-8-jre memcached libmemcached-dev zlib1g-dev pwgen curl openssl poppler-utils libpython2.7 libreoffice \
-libreoffice-script-provider-python ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy nginx python-requests
-
-pip install --upgrade pylibmc django-pylibmc
-```
-
-Next...
-
-Finally...
-
-<!--If showing a command, explain the command first by talking about what it does. Then show the command.-->
-
-configuration file - show only  relevant parts & explain what needs to change
-
-Now transition to the next step by telling the reader what's next.
-
 ## Step 2 — Title Case
 
 ## Deploying and Directory Layout
@@ -98,7 +66,79 @@ The benefit of this layout is that:
 - We can place all the config files for Seafile server inside "haiwen" directory, making it easier to manage.
 - When you upgrade to a new version of Seafile, you can simply untar the latest package into "haiwen" directory. In this way you can reuse the existing config files in "haiwen" directory and don't need to configure again.
 
-## Step 3 — Title Case
+## Step # - Prepare MySQL Databases
+
+Three components of Seafile Server need their own databases:
+
+- ccnet server
+- seafile server
+- seahub
+
+See [Seafile Server Components Overview](https://manual.seafile.com/overview/components.html) if you want to know more about the Seafile server components.
+
+There are two ways to intialize the databases:
+
+- let the `setup-seafile-mysql.sh` script create the databases for you.
+- create the databases by yourself, or someone else (the database admin, for example)
+
+We recommend the first way. The script would ask you for the root password of the mysql server, and it will create:
+
+- database for ccnet/seafile/seahub.
+- a new user to access these databases
+
+However, sometimes you have to use the second way. If you don't have the root password, you need someone who has the privileges, e.g., the database admin, to create the three databases, as well as a mysql user who can access the three databases for you. For example, to create three databases: `ccnet-db` / `seafile-db` / `seahub-db` for ccnet/seafile/seahub respectively, and a mysql user "seafile" to access these databases run the following SQL queries:
+
+```
+create database `ccnet-db` character set = 'utf8';
+create database `seafile-db` character set = 'utf8';
+create database `seahub-db` character set = 'utf8';
+
+create user 'seafile'@'localhost' identified by 'seafile';
+
+GRANT ALL PRIVILEGES ON `ccnet-db`.* to `seafile`@localhost;
+GRANT ALL PRIVILEGES ON `seafile-db`.* to `seafile`@localhost;
+GRANT ALL PRIVILEGES ON `seahub-db`.* to `seafile`@localhost;
+```
+
+## Step # - Install the Necessary Dependencies
+
+Introduction to the step. What are we going to do and why are we doing it?
+
+First....
+
+The Seafile server package requires the following packages to be installed on your system:
+
+- python 2.7
+- python-setuptools
+- python-imaging
+- python-ldap
+- python-mysqldb
+- python-urllib3
+- python-memcache (or python-memcached)
+- python-requests
+
+```command
+apt-get update
+apt-get install -y python2.7 sudo python-pip python-setuptools python-imaging python-mysqldb python-ldap python-urllib3 \
+openjdk-8-jre memcached libmemcached-dev zlib1g-dev pwgen curl openssl poppler-utils libpython2.7 libreoffice \
+libreoffice-script-provider-python ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy nginx python-requests
+
+pip install --upgrade pylibmc django-pylibmc
+```
+
+Next...
+
+Finally...
+
+<!--If showing a command, explain the command first by talking about what it does. Then show the command.-->
+
+configuration file - show only  relevant parts & explain what needs to change
+
+Now transition to the next step by telling the reader what's next.
+
+## Step #
+
+## Step # — Title Case
 
 Another introduction
 
