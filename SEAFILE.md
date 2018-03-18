@@ -26,13 +26,21 @@ Before you begin this guide you'll need the following:
 * SSH Connection
 * Securing Ubuntu 18.04
 
-## Step 1 — Doing Something
+## Step 1 - Install the Necessary Dependencies
 
 <!-- For more information on steps, see [https://do.co/style/#steps](https://do.co/style/#steps) -->
 
 Introduction to the step. What are we going to do and why are we doing it?
 
 First....
+
+To perform the installation, the seafile need some dependencies:
+
+* openjdk-8jre
+* LibreOffice
+* Popler-utils
+* mysql-server
+* python-pip
 
 Next...
 
