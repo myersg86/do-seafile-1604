@@ -22,6 +22,7 @@ Before you begin this guide you'll need the following:
 
 * An Ubuntu 18.04 Server with at least 2GB of RAM
 * A sudo user and firewall configured on your server. You can create a user with sudo privileges and set up a basic firewall by following the Ubuntu 18.04 initial server setup guide.
+* [https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04)
 * (Optional) If software such as Nginx needs to be installed, link to the proper article describing how to install it.
 * SSH Connection
 * Securing Ubuntu 18.04
