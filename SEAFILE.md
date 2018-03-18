@@ -136,7 +136,125 @@ configuration file - show only  relevant parts & explain what needs to change
 
 Now transition to the next step by telling the reader what's next.
 
-## Step #
+## Step # Setup
+
+```
+cd seafile-server-*
+./setup-seafile-mysql.sh  #run the setup script & answer prompted questions
+```
+
+If some of the prerequisites are not installed, the Seafile initialization script will ask you to install them.
+
+The script will guide you through the settings of various configuration options.
+
+**Seafile configuration options**
+
+| Option              | Description                                                  | Note                                                         |
+| ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| server name         | Name of this seafile server                                  | 3-15 characters, only English letters, digits and underscore ('_') are allowed |
+| server ip or domain | The IP address or domain name used by this server            | Seafile client program will access the server with this address |
+| seafile data dir    | Seafile stores your data in this directory. By default it'll be placed in the current directory. | The size of this directory will increase as you put more and more data into Seafile. Please select a disk partition with enough free space. |
+| fileserver port     | The TCP port used by Seafile fileserver                      | Default is 8082. If it's been used by other service, you can set it to another port. |
+
+At this moment, you will be asked to choose a way to initialize Seafile databases:
+
+```
+-------------------------------------------------------
+Please choose a way to initialize Seafile databases:
+-------------------------------------------------------
+
+[1] Create new ccnet/seafile/seahub databases
+[2] Use existing ccnet/seafile/seahub databases
+```
+
+Which one to choose depends on if you have the root password.
+
+- If you choose "1", you need to provide the root password. The script would create the databases and a new user to access the databases
+- If you choose "2", the ccnet/seafile/seahub databases must have already been created, either by you, or someone else.
+
+If you choose "[1] Create new ccnet/seafile/seahub databases", you would be asked these questions:
+
+| Question                        | Description                                                  | Note                                                         |
+| ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| mysql server host               | the host address of the mysql server                         | the default is localhost                                     |
+| mysql server port               | the port of the mysql server                                 | the default is 3306. Almost every mysql server uses this port. |
+| root password                   | the password of mysql root account                           | the root password is required to create new databases and a new user |
+| mysql user for Seafile          | the username for Seafile programs to use to access MySQL server | if the user does not exist, it would be created              |
+| password for Seafile mysql user | the password for the user above                              |                                                              |
+| ccnet dabase name               | the name of the database used by ccnet, default is "ccnet-db" | the database would be created if not existing                |
+| seafile dabase name             | the name of the database used by Seafile, default is "seafile-db" | the database would be created if not existing                |
+| seahub dabase name              | the name of the database used by seahub, default is "seahub-db" | the database would be created if not existing                |
+
+If you choose "[2] Use existing ccnet/seafile/seahub databases", you would be asked these questions:
+
+**related questions for "Use existing ccnet/seafile/seahub databases"**
+
+| Question                        | Description                                                  | Note                                                         |
+| ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| mysql server host               | the host address of the mysql server                         | the default is localhost                                     |
+| mysql server port               | the port of the mysql server                                 | the default is 3306. Almost every mysql server uses this port |
+| mysql user for Seafile          | the user for Seafile programs to use to access MySQL server  | the user must already exists                                 |
+| password for Seafile mysql user | the password for the user above                              |                                                              |
+| ccnet dabase name               | the name of the database used by ccnet                       | this database must already exist                             |
+| seafile dabase name             | the name of the database used by Seafile, default is "seafile-db" | this database must already exist                             |
+| seahub dabase name              | the name of the database used by Seahub, default is "seahub-db" | this database must already exist                             |
+
+If the setup is successful, you'll see the following output
+
+![server-setup-succesfully](https://manual.seafile.com/images/Server-setup-successfully.png)
+
+Now you should have the following directory layout :
+
+```
+#tree haiwen -L 2
+haiwen
+├── ccnet               # configuration files
+│   ├── mykey.peer
+│   ├── PeerMgr
+│   └── seafile.ini
+├── conf
+│   └── ccnet.conf
+│   └── seafile.conf
+│   └── seahub_settings.py
+├── installed
+│   └── seafile-server_1.8.2_x86-64.tar.gz
+├── seafile-data
+├── seafile-server-1.8.2  # active version
+│   ├── reset-admin.sh
+│   ├── runtime
+│   ├── seafile
+│   ├── seafile.sh
+│   ├── seahub
+│   ├── seahub.sh
+│   ├── setup-seafile.sh
+│   └── upgrade
+├── seafile-server-latest  # symbolic link to seafile-server-1.8.2
+├── seahub-data
+│   └── avatars
+```
+
+The folder `seafile-server-latest` is a symbolic link to the current Seafile server folder. When later you upgrade to a new version, the upgrade scripts update this link to point to the latest Seafile Server folder.
+
+## Running Seafile Server
+
+### Starting Seafile Server and Seahub Website
+
+Under seafile-server-1.8.2 directory, run the following commands
+
+```
+./seafile.sh start # Start Seafile service
+./seahub.sh start <port>  # Start seahub website, port defaults to 8000
+```
+
+Note: The first time you start Seahub, the script would prompt you to create an admin account for your Seafile Server.
+
+After starting the services, you may open a web browser and visit Seafile web interface at (assume your server IP is 192.168.1.111):
+
+```
+http://192.168.1.111:8000/
+```
+
+Congratulations! Now you have successfully setup your private Seafile Server.
 
 ## Step # — Title Case
 
