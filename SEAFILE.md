@@ -218,9 +218,9 @@ Congratulations! Now you have successfully setup your private Seafile Server.
 
 ## Configure for nginx
 
-1. create file `/etc/nginx/sites-available/seafile.conf`
-2. Delete `/etc/nginx/sites-enabled/default`: `rm /etc/nginx/sites-enabled/default`
-3. Create symbolic link: `ln -s /etc/nginx/sites-available/seafile.conf /etc/nginx/sites-enabled/seafile.conf`
+1.  create file `/etc/nginx/sites-available/seafile.conf`
+2.  Delete `/etc/nginx/sites-enabled/default`: `rm /etc/nginx/sites-enabled/default`
+3.  Create symbolic link: `ln -s /etc/nginx/sites-available/seafile.conf /etc/nginx/sites-enabled/seafile.conf`
 
 ```nginx
 server {
