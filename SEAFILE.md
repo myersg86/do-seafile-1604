@@ -44,7 +44,7 @@ mv seafile-server_* installed
 
 Now you should have the following directory layout
 
-```command
+```
 tree haiwen -L 2
 haiwen
 ├── installed
