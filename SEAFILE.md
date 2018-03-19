@@ -33,7 +33,7 @@ Before you begin this guide you'll need the following:
 
 Supposed your organization's name is "haiwen", and you've downloaded `seafile-server_1.8.2_*` into your home directory. We suggest you to to use the following layout for your deployment:
 
-```
+```command
 mkdir haiwen
 mv seafile-server_* haiwen
 cd haiwen
