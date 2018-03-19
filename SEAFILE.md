@@ -17,13 +17,13 @@ When you're finished, you'll be able to...
 Before you begin this guide you'll need the following:
 
 * An Ubuntu 18.04 Server with at least 2GB of RAM
-* One Ubuntu 16.04 server set up by following [this Ubuntu 16.04 initial server setup tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04), including a sudo non-root user and a firewall.
+* One Ubuntu 18.04 server set up by following [this Ubuntu 18.04 initial server setup tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04), including a sudo non-root user and a firewall.
 * A LEMP stack installed by following this [LEMP on Ubuntu 18.04 tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04)
 * A fully registered domain name. This tutorial uses `example.com` throughout. You can purchase a domain name on [Namecheap](https://namecheap.com/), get one for free on [Freenom](http://www.freenom.com/en/index.html), or use the domain registrar of your choice.
 * The following DNS records set up for your server. You can follow [How To Set Up a Host Name with DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean) for details on how to add them.
   - An **A** record with `example.com` pointing to your server's public IP address.
   - An **A** record with `www.example.com` pointing to your server's public IP address.
-* An Nginx Server Block with Let's Encrypt configured, which can be set up by following [How To Set Up Let's Encrypt with Nginx Server Blocks on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-let-s-encrypt-with-nginx-server-blocks-on-ubuntu-16-04).
+* An Nginx Server Block with Let's Encrypt configured, which can be set up by following [How To Set Up Let's Encrypt with Nginx Server Blocks on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-let-s-encrypt-with-nginx-server-blocks-on-ubuntu-16-04).
 
 [Download the latest server package.](https://www.seafile.com/en/download)
 
