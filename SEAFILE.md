@@ -27,9 +27,7 @@ Before you begin this guide you'll need the following:
 
 [Download the latest server package.](https://www.seafile.com/en/download)
 
-## Step 2 — Title Case
-
-## Deploying and Directory Layout
+## Step 2 — Deploying and Directory Layout
 
 Supposed your organization's name is "haiwen", and you've downloaded `seafile-server_1.8.2_*` into your home directory. We suggest you to to use the following layout for your deployment:
 
