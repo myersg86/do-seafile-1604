@@ -243,7 +243,7 @@ The folder `seafile-server-latest` is a symbolic link to the current Seafile ser
 
 Under seafile-server-1.8.2 directory, run the following commands
 
-```
+```command
 ./seafile.sh start # Start Seafile service
 ./seahub.sh start <port>  # Start seahub website, port defaults to 8000
 ```
