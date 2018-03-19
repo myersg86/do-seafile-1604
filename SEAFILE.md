@@ -140,7 +140,7 @@ Now transition to the next step by telling the reader what's next.
 
 ### Run the Setup Script & Answer Prompted Questions
 
-```
+```command
 cd seafile-server-*
 ./setup-seafile-mysql.sh
 ```
