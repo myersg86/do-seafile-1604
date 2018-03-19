@@ -144,7 +144,8 @@ Please choose a way to initialize Seafile databases:
 [2] Use existing ccnet/seafile/seahub databases
 ```
 Since we have the root password for the MySQL database, we can let the `setup-seafile-mysql.sh` script create the databases for you.
-Choose  option "1" and provide the root password. The script would create the databases and a new user to access the databases
+Choose  option "1" and provide the root password.
+This script will create the databases and a new user to access the databases.
 The script would ask you for the root password of the mysql server, and it will create:
 
 - database for ccnet/seafile/seahub.
