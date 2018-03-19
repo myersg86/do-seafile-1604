@@ -74,31 +74,13 @@ Three components of Seafile Server need their own databases:
 - seafile server
 - seahub
 
-See [Seafile Server Components Overview](https://manual.seafile.com/overview/components.html) if you want to know more about the Seafile server components.
+Since we have the root password for the MySQL database, we can let the `setup-seafile-mysql.sh` script create the databases for you.
 
-There are two ways to intialize the databases:
 
-- let the `setup-seafile-mysql.sh` script create the databases for you.
-- create the databases by yourself, or someone else (the database admin, for example)
-
-We recommend the first way. The script would ask you for the root password of the mysql server, and it will create:
+The script would ask you for the root password of the mysql server, and it will create:
 
 - database for ccnet/seafile/seahub.
 - a new user to access these databases
-
-However, sometimes you have to use the second way. If you don't have the root password, you need someone who has the privileges, e.g., the database admin, to create the three databases, as well as a mysql user who can access the three databases for you. For example, to create three databases: `ccnet-db` / `seafile-db` / `seahub-db` for ccnet/seafile/seahub respectively, and a mysql user "seafile" to access these databases run the following SQL queries:
-
-```mysql
-create database `ccnet-db` character set = 'utf8';
-create database `seafile-db` character set = 'utf8';
-create database `seahub-db` character set = 'utf8';
-
-create user 'seafile'@'localhost' identified by 'seafile';
-
-GRANT ALL PRIVILEGES ON `ccnet-db`.* to `seafile`@localhost;
-GRANT ALL PRIVILEGES ON `seafile-db`.* to `seafile`@localhost;
-GRANT ALL PRIVILEGES ON `seahub-db`.* to `seafile`@localhost;
-```
 
 ## Step # - Install the Necessary Dependencies
 
