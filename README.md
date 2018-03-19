@@ -1,6 +1,6 @@
 # do-seafile-1804
 
-[do.co/style]([https://do.co/style)](https://do.co/style)) - [Markdown previewer]([https://www.digitalocean.com/community/markdown)](https://www.digitalocean.com/community/markdown))
+[https://do.co/style)](https://do.co/style) - [Markdown previewer](https://www.digitalocean.com/community/markdown)
 
 # How to install and configure Seafile server on an Ubuntu 18.04 droplet
 
