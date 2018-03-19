@@ -1,7 +1,3 @@
-# do-seafile-1804
-
-[do.co/style]([https://do.co/style)](https://do.co/style)) - [Markdown previewer]([https://www.digitalocean.com/community/markdown)](https://www.digitalocean.com/community/markdown))
-
 # How to install and configure Seafile server on an Ubuntu 18.04 droplet
 
 Seafile is a private cloud such as Dropbox, except that Seafile is open source and encrypted by default, giving you added security and privacy benefits.
