@@ -2,7 +2,7 @@
 
 Seafile is a private cloud such as Dropbox, except that Seafile is open source and encrypted by default, giving you added security and privacy benefits.
 
-> Seafile is a private cloud such as Dropbox, OneDrive, and others. 
+> Seafile is a private cloud such as Dropbox, OneDrive, and others.
 >
 > Seafile supports encryption libraries that make your data will be more secure. To encrypt files in a library, you need to set a password when you create the library. The password is never stored on Seafile cloud. So even the administrator of the servers cannot view your encrypted data without the password.
 
