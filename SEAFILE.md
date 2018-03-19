@@ -334,7 +334,7 @@ You should use 0 to disable this feature or write the same value than for the pa
 
 Tip for uploading very large files (> 4GB): By default Nginx will buffer large request bodies in temp files. After the body is completely received, Nginx will send the body to the upstream server (seaf-server in our case). But it seems when the file size is very large, the buffering mechanism dosen't work well. It may stop proxying the body in the middle. So if you want to support file uploads larger than 4GB, we suggest to install Nginx version >= 1.8.0 and add the following options to Nginx config file:
 
-```ginx
+```nginx
     location /seafhttp {
         ... ...
         proxy_request_buffering off;
