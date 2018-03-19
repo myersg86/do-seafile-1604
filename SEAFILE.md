@@ -65,11 +65,7 @@ The benefit of this layout is that:
 - We can place all the config files for Seafile server inside "haiwen" directory, making it easier to manage.
 - When you upgrade to a new version of Seafile, you can simply untar the latest package into "haiwen" directory. In this way you can reuse the existing config files in "haiwen" directory and don't need to configure again.
 
-## Step # - Prepare MySQL Databases
-
-
-
-## Step # - Install the Necessary Dependencies
+## Step 2 - Install the Necessary Dependencies
 
 Introduction to the step. What are we going to do and why are we doing it?
 
@@ -105,9 +101,7 @@ configuration file - show only  relevant parts & explain what needs to change
 
 Now transition to the next step by telling the reader what's next.
 
-## Step # Setup
-
-### Run the Setup Script & Answer Prompted Questions
+## Step 3: Run the Setup Script & Answer Prompted Questions
 
 ```command
 cd seafile-server-*
