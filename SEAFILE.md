@@ -75,7 +75,6 @@ Three components of Seafile Server need their own databases:
 
 Since we have the root password for the MySQL database, we can let the `setup-seafile-mysql.sh` script create the databases for you.
 
-
 The script would ask you for the root password of the mysql server, and it will create:
 
 - database for ccnet/seafile/seahub.
