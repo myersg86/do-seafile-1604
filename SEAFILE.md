@@ -143,18 +143,14 @@ Please choose a way to initialize Seafile databases:
 [1] Create new ccnet/seafile/seahub databases
 [2] Use existing ccnet/seafile/seahub databases
 ```
+
 Since we have the root password for the MySQL database, we can let the `setup-seafile-mysql.sh` script create the databases for you.
-Choose  option "1" and provide the root password.
-This script will create the databases and a new user to access the databases.
-The script would ask you for the root password of the mysql server, and it will create:
+Choose option [1] Create new ccnet/seafile/seahub Databases
+
+This script will ask you for the root password of the mysql server, and then it will create:
 
 - database for ccnet/seafile/seahub.
 - a new user to access these databases
-
-Which one to choose depends on if you have the root password.
-
-- If you choose "1", you need to provide the root password. The script would create the databases and a new user to access the databases
-- If you choose "2", the ccnet/seafile/seahub databases must have already been created, either by you, or someone else.
 
 If you choose "[1] Create new ccnet/seafile/seahub databases", you would be asked these questions:
 
@@ -168,20 +164,6 @@ If you choose "[1] Create new ccnet/seafile/seahub databases", you would be aske
 | ccnet dabase name               | the name of the database used by ccnet, default is "ccnet-db" | the database would be created if not existing                |
 | seafile dabase name             | the name of the database used by Seafile, default is "seafile-db" | the database would be created if not existing                |
 | seahub dabase name              | the name of the database used by seahub, default is "seahub-db" | the database would be created if not existing                |
-
-If you choose "[2] Use existing ccnet/seafile/seahub databases", you would be asked these questions:
-
-**related questions for "Use existing ccnet/seafile/seahub databases"**
-
-| Question                        | Description                                                  | Note                                                         |
-| ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| mysql server host               | the host address of the mysql server                         | the default is localhost                                     |
-| mysql server port               | the port of the mysql server                                 | the default is 3306. Almost every mysql server uses this port |
-| mysql user for Seafile          | the user for Seafile programs to use to access MySQL server  | the user must already exists                                 |
-| password for Seafile mysql user | the password for the user above                              |                                                              |
-| ccnet dabase name               | the name of the database used by ccnet                       | this database must already exist                             |
-| seafile dabase name             | the name of the database used by Seafile, default is "seafile-db" | this database must already exist                             |
-| seahub dabase name              | the name of the database used by Seahub, default is "seahub-db" | this database must already exist                             |
 
 If the setup is successful, you'll see the following output
 
