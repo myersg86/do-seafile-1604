@@ -138,9 +138,11 @@ Now transition to the next step by telling the reader what's next.
 
 ## Step # Setup
 
+### Run the Setup Script & Answer Prompted Questions
+
 ```
 cd seafile-server-*
-./setup-seafile-mysql.sh  #run the setup script & answer prompted questions
+./setup-seafile-mysql.sh
 ```
 
 If some of the prerequisites are not installed, the Seafile initialization script will ask you to install them.
