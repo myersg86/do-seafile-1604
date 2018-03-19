@@ -363,7 +363,7 @@ FILE_SERVER_ROOT = 'http://seafile.example.com/seafhttp'
 
 ## Start Seafile and Seahub
 
-```
+```command
 ./seafile.sh start
 ./seahub.sh start
 ```
