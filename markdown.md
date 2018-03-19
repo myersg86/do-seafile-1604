@@ -1,4 +1,4 @@
-\## MARKDOWN EXAMPLES
+## MARKDOWN EXAMPLES
 
 This is _italics_ and this is **bold**.
 
@@ -9,47 +9,42 @@ This is `inline code`. Use it for referencing package names and commands.
 Here's a command someone types in the Terminal:
 
 ```command
-
+sudo apt update
 sudo nano /etc/nginx/sites-available/default
-
 ```
 
 Here's a configuration file. The label on the first line lets you clearly state the file that's being shown or modified:
 
 ```nginx
-
 [label /etc/nginx/sites-available/default]
 
 server {
 
-​    listen 80 default_server;
-
-​    listen [::]:80 default_server ipv6only=on;
-
-​    root <^>/usr/share/nginx/html<^>;
-
-​    index index.html index.htm;
-
-​    server_name localhost;
-
-​    location / {
-
-​        try_files $uri $uri/ =404;
-
-​    }
+    listen 80 default_server;
+    
+    listen [::]:80 default_server ipv6only=on;
+    
+    root <^>/usr/share/nginx/html<^>;
+    
+    index index.html index.htm;
+    
+    server_name localhost;
+    
+    location / {
+    
+        try_files $uri $uri/ =404;
+    
+    }
 
 }
-
 ```
 
 Here's output from a command:
 
 ```
-
 [secondary_label Output]
 
 Could not connect to Redis at 127.0.0.1:6379: Connection refused
-
 ```
 
 Learn about formatting commands and terminal output at [https://do.co/style#code](https://do.co/style#code)
@@ -89,7 +84,6 @@ Screenshots should be in PNG format and hosted on imgur. Embed them in the artic
 Learn more about images at [https://do.co/style#images-and-other-assets](https://do.co/style#images-and-other-assets)
 
 -->
+`````
 
-\`````
-
-\`````
+`````
