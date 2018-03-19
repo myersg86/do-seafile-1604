@@ -67,18 +67,7 @@ The benefit of this layout is that:
 
 ## Step # - Prepare MySQL Databases
 
-Three components of Seafile Server need their own databases:
 
-- ccnet server
-- seafile server
-- seahub
-
-Since we have the root password for the MySQL database, we can let the `setup-seafile-mysql.sh` script create the databases for you.
-
-The script would ask you for the root password of the mysql server, and it will create:
-
-- database for ccnet/seafile/seahub.
-- a new user to access these databases
 
 ## Step # - Install the Necessary Dependencies
 
@@ -140,6 +129,12 @@ The script will guide you through the settings of various configuration options.
 
 At this moment, you will be asked to choose a way to initialize Seafile databases:
 
+Three components of Seafile Server need their own databases:
+
+- ccnet server
+- seafile server
+- seahub
+
 ```
 -------------------------------------------------------
 Please choose a way to initialize Seafile databases:
@@ -148,6 +143,12 @@ Please choose a way to initialize Seafile databases:
 [1] Create new ccnet/seafile/seahub databases
 [2] Use existing ccnet/seafile/seahub databases
 ```
+Since we have the root password for the MySQL database, we can let the `setup-seafile-mysql.sh` script create the databases for you.
+Choose  option "1" and  provide the root password. The script would create the databases and a new user to access the databases
+The script would ask you for the root password of the mysql server, and it will create:
+
+- database for ccnet/seafile/seahub.
+- a new user to access these databases
 
 Which one to choose depends on if you have the root password.
 
