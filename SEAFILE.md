@@ -108,7 +108,7 @@ First....
 
 The Seafile server package requires the following packages to be installed on your system:
 
--  python 2.7
+- python 2.7
 - python-setuptools
 - python-imaging
 - python-ldap
