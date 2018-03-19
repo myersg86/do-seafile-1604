@@ -25,9 +25,10 @@ Before you begin this guide you'll need the following:
   - An **A** record with `www.example.com` pointing to your server's public IP address.
 * An Nginx Server Block with Let's Encrypt configured, which can be set up by following [How To Set Up Let's Encrypt with Nginx Server Blocks on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-let-s-encrypt-with-nginx-server-blocks-on-ubuntu-16-04).
 
-[Download the latest server package.](https://www.seafile.com/en/download)
 
-## Step 2 — Deploying and Directory Layout
+## Step 1 — Deploying and Directory Layout
+
+[Download the latest server package.](https://www.seafile.com/en/download)
 
 Supposed your organization's name is "haiwen", and you've downloaded `seafile-server_1.8.2_*` into your home directory. We suggest you to to use the following layout for your deployment:
 
