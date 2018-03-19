@@ -153,7 +153,7 @@ The script will guide you through the settings of various configuration options.
 | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | server name         | Name of this seafile server                                  | 3-15 characters, only English letters, digits and underscore ('_') are allowed |
 | server ip or domain | The IP address or domain name used by this server            | Seafile client program will access the server with this address |
-| seafile data dir    | Seafile stores your data in this directory. By default it'll be placed in the current directory. | The size of this directory will increase as you put more and more data into Seafile. Please select a disk partition with enough free space. |
+| seafile data dir    | Seafile stores your data in this directory. Default it'll be placed in the current directory. | The size of this directory will increase as you put more and more data into Seafile. Please select a disk partition with enough free space. |
 | fileserver port     | The TCP port used by Seafile fileserver                      | Default is 8082. If it's been used by other service, you can set it to another port. |
 
 At this moment, you will be asked to choose a way to initialize Seafile databases:
