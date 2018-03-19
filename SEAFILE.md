@@ -108,7 +108,7 @@ First....
 
 The Seafile server package requires the following packages to be installed on your system:
 
-- python 2.7
+-  python 2.7
 - python-setuptools
 - python-imaging
 - python-ldap
@@ -395,19 +395,19 @@ Here's a configuration file. The label on the first line lets you clearly state 
 server {
 
     listen 80 default_server;
-    
+
     listen [::]:80 default_server ipv6only=on;
-    
+
     root <^>/usr/share/nginx/html<^>;
-    
+
     index index.html index.htm;
-    
+
     server_name localhost;
-    
+
     location / {
-    
+
         try_files $uri $uri/ =404;
-    
+
     }
 
 }
