@@ -2,9 +2,9 @@
 
 Seafile is a private cloud such as Dropbox, except that Seafile is open source and encrypted by default, giving you added security and privacy benefits.
 
-> Seafile is a private cloud such as Dropbox, OneDrive and others. Seafile is based on python and it is open source, so that you can create your own private cloud and it will be much more secure.
-
-> Seafile supports encryption libraries that make your data will be more secure. To encrypt files in a library, you need to set a password when you create the library. The password won't be stored on Seafile cloud. So even the administrator of the servers cannot view your encrypted data without the password.
+> Seafile is a private cloud such as Dropbox, OneDrive, and others. 
+>
+> Seafile supports encryption libraries that make your data will be more secure. To encrypt files in a library, you need to set a password when you create the library. The password is never stored on Seafile cloud. So even the administrator of the servers cannot view your encrypted data without the password.
 
 Introductory paragraph about the topic that explains what this topic is about and why the reader should care; what problem does it solve?
 
@@ -290,7 +290,7 @@ Nginx settings `client_max_body_size` is by default 1M. Uploading a file bigger 
 
 You should use 0 to disable this feature or write the same value than for the parameter `max_upload_size` in section `[fileserver]` of [seafile.conf](https://manual.seafile.com/config/seafile-conf.html). Client uploads are only partly effected by this limit. With a limit of 100 MiB they can safely upload files of any size.
 
-Tip for uploading very large files (> 4GB): By default Nginx will buffer large request bodies in temp files. After the body is completely received, Nginx will send the body to the upstream server (seaf-server in our case). But it seems when the file size is very large, the buffering mechanism dosen't work well. It may stop proxying the body in the middle. So if you want to support file uploads larger than 4GB, we suggest to install Nginx version >= 1.8.0 and add the following options to Nginx config file:
+Tip for uploading very large files (> 4GB): By default Nginx will buffer large request bodies in temp files. After the body is completely received, Nginx will send the body to the upstream server (seaf-server in our case). But it seems when the file size is very large, the buffering mechanism doesn't work well. It may stop proxying the body in the middle. So if you want to support file uploads larger than 4GB, we suggest to install Nginx version >= 1.8.0 and add the following options to Nginx config file:
 
 ```nginx
     location /seafhttp {
